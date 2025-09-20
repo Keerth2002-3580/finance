@@ -221,7 +221,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onPageChange }) =>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Investment Amount (₹)
+                  Investment Amount (LKR)
                 </label>
                 <input
                   type="number"
@@ -231,7 +231,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ onPageChange }) =>
                   step="10000"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"
                 />
-                <p className="text-sm text-gray-500 mt-1">Minimum: ₹50,000</p>
+                <p className="text-sm text-gray-500 mt-1">Minimum: LKR50,000</p>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h3 className="font-semibold mb-2">Expected Returns</h3>

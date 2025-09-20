@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import plantsLogo from  "../assets/plants.jpg";
 
 interface HeaderProps {
   currentPage: string;
@@ -35,15 +36,17 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onPageChange }) => 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center cursor-pointer" onClick={() => handleNavClick('home')}>
-            <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-3">
-              <span className="text-white font-bold text-xl">NF</span>
-            </div>
+            <div className="flex items-center cursor-pointer" onClick={() => handleNavClick('home')}>
+            <img
+              src={plantsLogo}
+              alt="NF Plantation Logo"
+              className="w-12 h-12 rounded-full object-cover mr-3"
+            />
             <div>
               <h1 className="text-xl font-bold text-gray-900">NF Plantation</h1>
               <p className="text-sm text-gray-600">Investment Solutions</p>
             </div>
-          </div>
+            </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
