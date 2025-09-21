@@ -1,7 +1,7 @@
 
   # Finance Company Website
 
-  This is a code bundle for Finance Company Website. The original project is available at https://www.figma.com/design/lNPVzZ6oxjkCBeLRmkCHX2/Finance-Company-Website.
+ 
 
   ## Running the code
 
